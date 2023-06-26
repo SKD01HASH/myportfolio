@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    /* Your CSS styles */
+    
+    body {
+      background-image: url('background2.jpeg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    h1 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    h1:before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    
+    .section {
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .section p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 1s ease-in forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    /* Additional styles for navigation */
+    
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+  </style>
+
+<body>
+
+
+  <script>
+    // Your JavaScript code for animations
+    window.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        if (isElementInViewport(section)) {
+          section.classList.add('fade-in');
+        }
+      });
+
+      function isElementInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+          if (isElementInViewport(section)) {
+            section.classList.add('fade-in');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+        </ul>
+      </nav>
+    
+
+  </div>
+
+  <div class="container">
+    <h1>Links 🔗</h1>
+
+    <section id="links" class="section">
+      <p align="left">
+        <a href="https://drive.google.com/file/d/1DQjHT3C8JXgMjEicaDmkmfNBo8-zGOcY/view">
+          <img align="center" src="resume.png" alt="Resume" height="70" width="70">
+        </a>
+        <a href="https://github.com/SKD01HASH">
+          <img align="center" src="github-icon.png" alt="GitHub" height="70" width="70">
+        </a>
+        <a href="https://drive.google.com/drive/folders/1mWcwtZYOh-w_PqPKd2Zo3MF-9Cen4mLD">
+            <img align="center" src="cert.png" alt="GitHub" height="70" width="70">
+        </a>
+      </p>
+      <h2>Connect with me 🤖: </h2>
+      <p align="left">
+        <a href="https://twitter.com/dashsaswata">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="dashsaswata" height="60" width="70" />
+        </a>
+        <a href="https://www.linkedin.com/in/saswata-kumar-dash-755471220/">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/saswata-kumar-dash-skd-755471220/" height="60" width="70" />
+        </a>
+        <a href="https://stackoverflow.com/users/19700588/saswata-kumar-dash-skd">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="https://stackoverflow.com/users/19700588/saswata-kumar-dash-skd" height="60" width="70" />
+        </a>
+        <a href="https://kaggle.com/saswatakumardashskd">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="saswatakumardashskd" height="60" width="70" />
+        </a>
+        <a href="https://instagram.com/saswatdash2003">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="saswatdash2003" height="60" width="70" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCSFX93T82aO84EWirLSPnlw">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="https://www.youtube.com/channel/ucsfx93t82ao84ewirlspnlw" height="60" width="70" />
+        </a>
+        <a href="https://www.hackerrank.com/@saswatadash201">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@saswatadash201" height="60" width="70" />
+        </a>
+        <a href="https://www.hackerearth.com/@saswatdash577">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@saswatdash577" height="60" width="70" />
+        </a>
+        <a href="https://auth.geeksforgeeks.org/user/saswatdashskd2003">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="saswatdashskd2003" height="60" width="70" />
+        </a>
+        <a href="https://discord.gg/#9978">
+          <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="#9978" height="60" width="70" />
+        </a>
+        
+      </p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2023 Saswata Kumar Dash</p>
+  </footer>
+</body>
+</html>
